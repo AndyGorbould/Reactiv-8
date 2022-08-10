@@ -60,6 +60,9 @@ I'm borrowing the name from 👽 [Altern 8](https://www.discogs.com/artist/12846
 - this
 - later
 - 😈
+- Uncaught (in promise) - I didn't write anything to catch any errors yet
+- TypeError: Cannot read properties of undefined (reading 'incorrect_answers')
+- I think these are due to lack of hooks/states, look up 'making api call react hooks'
 
 ---
 
@@ -69,6 +72,9 @@ I'm borrowing the name from 👽 [Altern 8](https://www.discogs.com/artist/12846
 - JSX (JavaScript eXtensible Markup Language) is often used in place of JS files, these files make HTML insertion more readable & efficient
 - _Props = Properties._ A function or class should never modify the props `<i need to add a code example!!>`
 - ***
+- for the 'choose answer' buttons, an 'if' statement is needed for the question type, eg. `if type="multiple" display correct_answer + each of incorrect_answers; else if type="boolean" display True/False` but remember to do this in real code lolz
+- the answers need to be randomized, so the correct_answer button isn't always the first one (otherwise it's a very easy game when the player figures that out!)
+- the con.log is mostly working, but there seems to be some problems on the DOM, this might be
 
 # Everything starts with a ROOT
 
