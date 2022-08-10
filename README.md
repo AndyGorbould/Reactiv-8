@@ -39,6 +39,17 @@ I'm borrowing the name from 👽 [Altern 8](https://www.discogs.com/artist/12846
 
 ---
 
+## Steps taken
+
+- Created the app with `npx create-react-app reactiv-8` _cd_ to reactiv-8 then `npm start`
+- in public/index.html the boilerplate already provides `<div id="root"></div>` this is a good place to start!
+- my first 'test' is to change the index.html <p> element, this worked successfully. (learn to crawl first, then walk)
+- now I'll generate some components: Header, Navigation, Footer, GameWindow. Maybe more will be needed but this should be good to begin with `npx generate-react-cli component Header` etc.
+- CLI gave a few options, I'll link the screenshot later..
+- Once the components are created, they need to be imported like: `import Header from "./components/Header/Header";` this goes at the beginning of the App.js (this could change, like the Russian Doll approach, if the component is only used INSIDE of header, it should be imported there for example). The exports are auto-generated with the CLI
+- inside of App.js, the <Header /> tag needs to be called to display this component, inside of Header.js <Nav /> needs to be called (& imported of course) & so on & so form & all that jazz.
+- in Main.js try to fetch using the coaches' code
+
 ## Problems encountered
 
 - I
@@ -54,24 +65,26 @@ I'm borrowing the name from 👽 [Altern 8](https://www.discogs.com/artist/12846
 
 ## Notes
 
-- when writing HTML inside of React, `className="smthng"` is used as opposed to the usual `class="smthng"`, because class is already reserved for JS Class
+- when writing HTML inside of React, `className="smthng"` is used as opposed to the usual `class="smthng"`, because class is already reserved for JS Class. Keep an eye open for more cases like this!
 - JSX (JavaScript eXtensible Markup Language) is often used in place of JS files, these files make HTML insertion more readable & efficient
 - _Props = Properties._ A function or class should never modify the props `<i need to add a code example!!>`
-
----
+- ***
 
 # Everything starts with a ROOT
 
 <img src="https://www.vibconferences.be/sites/default/files/styles/event_slider_detail/public/2021-12/bean%20root_GPhase_larger.jpg?itok=rM6rEswE" alt="root" width="200">
 
-`<div id="root"></div>`
-this is a 'root' in HTML that we've already created
+```jsx
+<div id="root"></div>;
+//this is a 'root' in HTML that we've already created
 
-`const root = ReactDOM.createRoot( document.getElementById('root') );`
-this is how you'd create a root in JS
+const root = ReactDOM.createRoot(document.getElementById("root"));
+//this is how you'd create a root in JS
 
-`const element = <h1>Hello, world</h1>; root.render(element);`
-this is how you would render the H1 element _inside_ of the DOM root
+const element = <h1>Hello, world</h1>;
+root.render(element);
+//this is how you would render the H1 element _inside_ of the DOM root
+```
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd52I-c85SXhitEEJ75i7y_7PfQujbIWRbOA&usqp=CAU" alt="dom" width="200">
 
