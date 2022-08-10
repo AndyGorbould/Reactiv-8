@@ -37,6 +37,14 @@ I'm borrowing the name from 👽 [Altern 8](https://www.discogs.com/artist/12846
 - Keep high scores of your players
 - Connect with Node and Socket.io to make it multiplayer!
 
+- #### Can I, as a final extra make all of the questions related to 90s rave & culture???
+
+  - Audio snippets could be added as questions
+  - Images could be questions
+  - This would require my own API to work with, but with enough time I can see this being very achievable, & I think Mark Archer would enjoy the tribute!
+
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLx_pD0KJUfxoETn_X6pa3s5AwseAsY_0kA&usqp=CAU" alt="90s Rave Crew">
+
 ---
 
 ## Steps taken
@@ -112,3 +120,17 @@ The first result I can con.log is displayed like this:
 > incorrect_answers: (3) ['Demeter', 'Zeus', 'Athena']
 > question: "Who was the only god from Greece who did not get a name change in Rome?"
 > type: "multiple"
+
+These results are randomized due to how this particular API is configured (I think, plz review this statement!!)
+
+---
+
+# Working on another machine??? => the idiot-proof solution is right here!
+
+If you're working on a React project on multiple machines, the 'node_modules' directory won't be uploaded to GitHub; because it's not uploading these dependancies to your reep, they can get big! 287,9 MB for my project currently! So to counter this, when you clone/fork a reep you'll not be able to run the project on the new machine. Sucks eh? But there's a very easy method to rectify this: `npm install` while in the project root dir, this checks out which dependencies are in the project's package.json & installs these node-modules as required!
+
+---
+
+### All images are copyright of their respective owners & no copyright infringement is intended; if you are the owner of any images used in this repository & would like me to remove it, please contact me immediately & I'll get it sorted as quickly as possible :)
+
+<img src="https://i0.wp.com/thefestivals.uk/wp-content/uploads/2020/12/41325EFC-AB60-4162-A5F4-FC5CA60CE3B0.jpg?resize=750%2C479&ssl=1" width="600">
