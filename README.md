@@ -48,7 +48,7 @@ I'm borrowing the name from 👽 [Altern 8](https://www.discogs.com/artist/12846
 - CLI gave a few options, I'll link the screenshot later..
 - Once the components are created, they need to be imported like: `import Header from "./components/Header/Header";` this goes at the beginning of the App.js (this could change, like the Russian Doll approach, if the component is only used INSIDE of header, it should be imported there for example). The exports are auto-generated with the CLI
 - inside of App.js, the <Header /> tag needs to be called to display this component, inside of Header.js <Nav /> needs to be called (& imported of course) & so on & so form & all that jazz.
-- in Main.js try to fetch using the coaches' code
+- in Main.js try to fetch using the coaches' code, this didn't work for me so I tried a few googlys & found something that gave me a positive result! (see Async/Fetch for more details) I'm trying to push these to an array in the Main.js, then I believe I should be able to jump to a new question when the players have answered each round (this may change soon, depends on how I manage to make the game 'work')
 
 ## Problems encountered
 
@@ -93,3 +93,16 @@ root.render(element);
 # Generate Components
 
 To generate a new component with the CLI `npx generate-react-cli component ExampleName` _PascalCase can be used for components_
+
+---
+
+# Async/Fetch
+
+The first result I can con.log is displayed like this:
+
+> category: "Mythology"
+> correct_answer: "Apollo"
+> difficulty: "easy"
+> incorrect_answers: (3) ['Demeter', 'Zeus', 'Athena']
+> question: "Who was the only god from Greece who did not get a name change in Rome?"
+> type: "multiple"
