@@ -41,4 +41,42 @@ I'm borrowing the name from 👽 [Altern 8](https://www.discogs.com/artist/12846
 
 ## Problems encountered
 
+- I
+- will
+- add
+- lots
+- to
+- this
+- later
+- 😈
+
+---
+
 ## Notes
+
+- when writing HTML inside of React, `className="smthng"` is used as opposed to the usual `class="smthng"`, because class is already reserved for JS Class
+- JSX (JavaScript eXtensible Markup Language) is often used in place of JS files, these files make HTML insertion more readable & efficient
+- _Props = Properties._ A function or class should never modify the props `<i need to add a code example!!>`
+
+---
+
+# Everything starts with a ROOT
+
+<img src="https://www.vibconferences.be/sites/default/files/styles/event_slider_detail/public/2021-12/bean%20root_GPhase_larger.jpg?itok=rM6rEswE" alt="root" width="200">
+
+`<div id="root"></div>`
+this is a 'root' in HTML that we've already created
+
+`const root = ReactDOM.createRoot( document.getElementById('root') );`
+this is how you'd create a root in JS
+
+`const element = <h1>Hello, world</h1>; root.render(element);`
+this is how you would render the H1 element _inside_ of the DOM root
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd52I-c85SXhitEEJ75i7y_7PfQujbIWRbOA&usqp=CAU" alt="dom" width="200">
+
+---
+
+# Generate Components
+
+To generate a new component with the CLI `npx generate-react-cli component ExampleName` _PascalCase can be used for components_
