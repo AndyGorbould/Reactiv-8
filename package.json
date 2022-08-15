@@ -12,7 +12,11 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-scripts": "^2.1.3",
+=======
+    "react-scripts": "5.0.1",
+>>>>>>> ca72fce9ae2908d7684993359e32f2c0e7fc42a6
     "web-vitals": "^2.1.4"
   },
   "scripts": {
